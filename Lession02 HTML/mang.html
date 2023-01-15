@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    * {
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    html {
+        font-size: 62.5%;
+    }
+    .main-content {
+        width: 1550px;
+        max-width: 100%;
+    }
+    body {
+        font-size: 1.6rem;
+    }
+    /*--------header ----------*/
+    .header-fixed {
+        display: flex;
+        align-items: center;
+        padding-left: 35px;
+        padding-right: 35px;
+        height: 81px;
+        border: 1px solid #d3c93e;
+        background-color: #e1d6ca;
+    }
+    .header .header-logo {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #6a5b55 !important;
+    }
+    .header .navbar_menu {
+        margin-left: auto;
+    }
+    .header .navbar-item {
+        font-family: "Open Sans", Arial, sans-serif;
+        display: inline-block;
+        position: relative;
+    }
+    .header .navbar-item .navbar-title {
+        text-decoration: none;
+        justify-content: center;
+        padding: 11px 7px 33px;
+        font-size: 0.9rem;
+        color: #6a5b55;
+    }
+    .header .navbar-item .navbar-title::before {
+        position: absolute;
+        display: inline;
+        justify-content: center;
+        left: -6%;
+        top: 4.5px;
+        content: "|";
+        font-size: x-small;
+        color: #c7b9ae;
+    }
+    .header .navbar-item:first-child .navbar-title::before {
+        display: none;
+    }
+    .header .navbar-item:nth-child(2) .navbar-title::after {
+        content: "";
+        border: 4px solid transparent;
+        border-top: 5px solid rgb(123, 101, 101);
+        margin-left: 5px;
+        margin-bottom: -1px;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    .header .navbar-item:hover .sub--menu {
+        display: inline-block;
+    }
+    .header .sub--menu {
+        position: absolute;
+        display: none;
+        width: 240px;
+        height: 160px;
+        top: 49px;
+        background-color: #e1d6ca;
+        padding: 20px 0;
+        left: 7px;
+        z-index: 1;
+    }
+    .header .sub---item:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .header .sub--menu .sub---item {
+        padding: 10px 20px;
+        width: 200px;
+        height: 40px;
+        margin-left: 20px;
+    
+        transition: all 0.5s;
+    }
+    .header .sub--menu .sub---title {
+        color: #6a5b55;
+    }
+    /*-------- hero ----------*/
+    .hero {
+        background-color: #ebe0d4;
+        padding: 23px 0 10px 50px;
+    }
+    .hero-center {
+        position: relative;
+        width: 1080px;
+        height: 105px;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+    }
+    .hero--info {
+        display: flex;
+        gap: 12px;
+        width: 800px;
+        height: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+        max-width: 800px;
+        text-align: center;
+    }
+    .hero--info .hero---title,
+    .hero--info .hero---desc {
+        font-family: "Mr Dafoe", cursive;
+        line-height: 1em;
+        font-weight: 500;
+        font-size: 35px;
+        color: #6a5b55 !important;
+        letter-spacing: 2px;
+        justify-items: center;
+    }
+    /*-------- guides ----------*/
+    
+    .guides-group1,
+    .guides-group2 {
+        display: flex;
+        position: relative;
+    }
+    .guides_block .guides-title-lc {
+        position: absolute;
+        top: 33%;
+        height: 50px;
+        width: 512px;
+        background-color: rgba(235, 224, 212, 0.4);
+    }
+    .guides_block .guides-title {
+        text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.6);
+        font-family: "Advent Pro", Helvetica, Arial, Lucida, sans-serif !important;
+        font-size: 2.3rem;
+        text-align: center;
+        color: #f0e0e0;
+        line-height: 1.2;
+        z-index: 1;
+    }
+    .main-content img {
+        filter: brightness(80%);
+        max-width: 100%;
+        width: 529px;
+        height: 375px;
+        object-fit: cover;
+        border-image: fill;
+    }
+    .main-content img:hover {
+        filter: brightness(30%);
+    }
+    .footer {
+        height: 305px;
+        background-color: black;
+    }
+    .footer .info {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        padding-top: 90px;
+    }
+    .footer .group-info {
+        width: 225.4px;
+        height: 108px;
+    }
+    .footer .map {
+        display: inline-block;
+        margin: 10px 60px 0;
+        color: #e1d6ca !important;
+    }
+    .footer .sub-title,
+    .footer .desc {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 1.4;
+        color: white;
+    }
+    .footer .desc {
+        margin-top: 10px;
+    }
+    .footer .contact {
+        display: inline-block;
+        margin: 10px 38px 0px;
+        justify-content: center;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 1.4;
+        color: #e1d6ca !important;
+    }
+    .footer .icon {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer .facebook {
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        background-color: blue;
+        color: white;
+        font-size: 18px;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+    .fa-facebook-f:before {
+        content: "\f39e";
+        display: inline-block;
+        margin-top: 8.5px;
+    }
+    .footer .instagram {
+        text-align: center;
+        width: 32px;
+        height: 32px;
+        background-color: #ea2c59;
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+        border-radius: 3px;
+    }
+    .fa-instagram:before {
+        content: "\f16d";
+        display: inline-block;
+        margin: 6px 6px 0;
+    }
+    .copyright-footer {
+        position: relative;
+        width: 1080px;
+        height: 23.8px;
+        margin-left: 15%;
+        margin-top: 6%;
+    }
+    .copyright-info {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .copyright-footer .desc,
+    .copyright-footer a {
+        align-items: center;
+        margin-top: -35px;
+        font-weight: 700;
+        color: #e1d6ca;
+        font-size: 15px;
+    }
+    .copyright-footer a {
+        margin-top: -31px;
+        color: rgb(141, 141, 192) !important;
+    }
+</body>
+</html>
