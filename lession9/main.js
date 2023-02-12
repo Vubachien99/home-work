@@ -33,3 +33,44 @@ function checkCP(x) {
   return false;
 }
 checkCP(9);
+// ttoongr các sô trong mảng
+let arr = [3, 2, 6, 8, 9, 10];
+
+function sumarr(a) {
+  let sum1 = 0;
+  for (let i = 0; i < a.length; i++) {
+    sum1 += a[i];
+  }
+  console.log("Tổng các số trong mảng là " + sum1);
+}
+sumarr(arr);
+// salary
+let employee = [
+  { name: "jonh", age: 21, salary: 23000 },
+  { name: "vbc", age: 21, salary: 23000 },
+  { name: "Thanh ", age: 21, salary: 20000 },
+];
+function getsum(employees) {
+  let sum = 0;
+  for (let i = 0; i < employees.length; i++) {
+    sum += employees[i].salary;
+  }
+  console.log(sum);
+}
+getsum(employee);
+// bai tap chuoi
+
+let str1 = "Vu-ba-chien - Dinh-thi-thanh";
+function tranf(str) {
+  let newString = " ";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "-") {
+      i++;
+      newString += str[i].toUpperCase();
+    } else {
+      newString += str[i];
+    }
+  }
+  return newString;
+}
+console.log(tranf(str1));
