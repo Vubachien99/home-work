@@ -1,0 +1,27 @@
+.aligment {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* button {
+    align-items: center;
+
+} */
+
+.fail.close {
+    display: none
+}
+
+.fail {
+    text-align: center;
+}
+
+.success.open {
+    display: block
+}
+
+.success {
+    display: none;
+    color: red;
+    text-align: center;
+}
