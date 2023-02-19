@@ -1,27 +1,43 @@
+//  bài 1
+function check() {
+  let arr = [];
+  for (let i = 1; i <= 15; i++) {
+    if ((i % 3 == 0) & (i < 15)) {
+      arr.push("Fizz");
+    } else if (i % 5 == 0 && i < 15) {
+      arr.push("Buzz");
+    } else if (i % 3 == 0 && i % 5 == 0) {
+      arr.push("fizzBuzz");
+    }
+  }
+  return arr;
+}
+console.log(check());
+
 // Bài 2  Đếm kí tự nguyên âm
-// let str = 123;
-// function countVowels(a) {
-//   let count = 0;
-//   if (typeof a !== "string") {
-//     console.log("Du lieu dau vao khong hop le!!!");
-//   }
-//   for (let i = 0; i < a.length; i++) {
-//     if (
-//       a[i] === "e" ||
-//       a[i] === "u" ||
-//       a[i] === "o" ||
-//       a[i] === "a" ||
-//       a[i] === "i"
-//     ) {
-//       count += 1;
-//     }
-//     if ((a[i] = "")) {
-//       count = 0;
-//       i++;
-//     }
-//   }
-//   return count;
-// }
+let str = 123;
+function countVowels(a) {
+  let count = 0;
+  if (typeof a !== "string") {
+    console.log("Du lieu dau vao khong hop le!!!");
+  }
+  for (let i = 0; i < a.length; i++) {
+    if (
+      a[i] === "e" ||
+      a[i] === "u" ||
+      a[i] === "o" ||
+      a[i] === "a" ||
+      a[i] === "i"
+    ) {
+      count += 1;
+    }
+    if ((a[i] = "")) {
+      count = 0;
+      i++;
+    }
+  }
+  return count;
+}
 // console.log(countVowels(str));
 // // function vowel_count(str1) {
 // //   var vowel_list = "aeiouAEIOU";
@@ -36,17 +52,17 @@
 // // }
 
 // // Bai 3
-// let array = ["one", "two", "one", "nine", "nine", "ten"];
-// let newarr = [];
-// function removeArr(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     if (!newarr.includes(arr[i])) {
-//       newarr.push(arr[i]);
-//     }
-//   }
-//   console.log(newarr);
-// }
-// removeArr(array);
+let array = ["one", "two", "one", "nine", "nine", "ten"];
+let newarr = [];
+function removeArr(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (!newarr.includes(arr[i])) {
+      newarr.push(arr[i]);
+    }
+  }
+  console.log(newarr);
+}
+removeArr(array);
 
 // Bài 4
 const employeesInfo = [
