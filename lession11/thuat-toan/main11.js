@@ -115,3 +115,13 @@ function Sa_employee(name) {
 }
 
 console.log(Sa_employee("Alex"));
+//
+// function check(nums) {
+//   for (let i = 0; i < nums.length; i++) {
+//     while (nums[i] >= nums[i + 1]) {
+//       let arr = nums.splice(i + 1, 1);
+//     }
+//     return nums;
+//   }
+// }
+// check([1, 1, 1]);
